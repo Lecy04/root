@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.urls import path
 from . import views
-from django import admin
+from django.contrib import admin
 
 urlpatterns = [
     path('', views.home),
-    path('reversed/', views.reverse, name = 'reverse')
+    path('admin/', admin.site.urls),
 ]
