@@ -9,37 +9,26 @@
 </head>
 <body>
     <header>
-        <div class="bg-dark collapse show" id="navbarHeader" style="height: auto;">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-8 col-md-7 py-4">
-                <h4 class="text-white">Зачем все это?</h4>
-                <p class="text-muted">Я решил создать сайт, чтобы вы смогли понять какой антивирус лучше подойте вам.</p>
-              </div>
-              <div class="col-sm-4 offset-md-1 py-4">
-                <h4 class="text-white">Навигация</h4>
-                <ul class="list-unstyled">
-                  <li><a href="{% url 'home' %}" class="text-white">Главная</a></li>
-                  <li><a href="{% url 'comparison' %}" class="text-white">Сравнение антивирусов</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="navbar navbar-dark bg-dark shadow-sm">
           <div class="container">
-            <a href="" class="navbar-brand d-flex align-items-center">
+
+        
+
+            <a href="{%url 'home'%}" class="navbar-brand d-flex align-items-center">
               <strong>Антивирусы</strong>
+
+              <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+                <a class="navbar-brand d-flex align-items-center" href="{%url 'comparison'%}">Сравнение антивирусов</a>
+              </nav>
+
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="true" aria-label="Toggle naviga`tion">
-              <span class="navbar-toggler-icon"></span>
-            </button>
           </div>
         </div>
-      </header>
+    </header>
 
       <div class="container">
         {% block content %}{% endblock %}  
       </div>
+
 </body>
 </html>
