@@ -5,19 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>{% block title %}{% endblock %}</title>
+    <link rel="shortcut icon" href="https://datais.cz/wp-content/uploads/2018/08/shield.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
     <header>
         <div class="navbar navbar-dark bg-dark shadow-sm">
           <div class="container">
-
-        
-
-            <a href="{%url 'home'%}" class="navbar-brand d-flex align-items-center">
-              <strong>Антивирусы</strong>
-
-              <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+            <div class="logo">
+                <class="logo_a"><img src="https://datais.cz/wp-content/uploads/2018/08/shield.png" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24" ></a>
+                <a class="navbar-brand align-items-auto" href="{%url 'home'%}">
+                    <strong>Антивирусы</strong>
+              
+                </div>
+                
+                <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+                <a class="navbar-brand d-flex align-items-center" href="{%url 'home'%}">Главная</a>
                 <a class="navbar-brand d-flex align-items-center" href="{%url 'comparison'%}">Сравнение антивирусов</a>
               </nav>
 
