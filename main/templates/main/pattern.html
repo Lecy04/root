@@ -7,7 +7,7 @@
     <title>{% block title %}{% endblock %}</title>
     <link rel="shortcut icon" href="https://www.vippng.com/png/full/369-3694531_anti-virus-circle-cyber-security-png.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
+  </head>
 <body>
     <header>
         <div class="navbar navbar-dark bg-dark shadow-sm">
@@ -15,8 +15,7 @@
             <div class="logo">
                 <class="logo_a"><a class="navbar-brand align-items-center" href="{%url 'home'%}">
                   <strong>Антивирус</strong><img src="https://www.vippng.com/png/full/369-3694531_anti-virus-circle-cyber-security-png.png" height="25px"></a>
-               
-                  </div>
+            </div>
                 
                 <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
                 <a class="navbar-brand d-flex align-items-center" href="{%url 'home'%}">Главная</a>
@@ -29,6 +28,14 @@
       <div class="container">
         {% block content %}{% endblock %}  
       </div>
+
+    
+      <hr class="col-0 col-md-11 mb-0">
+
+      <footer class="container">
+        <p class="float-end"><a href="#">Вернуться в начало</a></p>
+        <p>Этот сайт создал Золотухин Айдар, ученик Школы №110.</p>
+      </footer>
 
 </body>
 </html>
