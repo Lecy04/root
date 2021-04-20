@@ -5,22 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>{% block title %}{% endblock %}</title>
-    <link rel="shortcut icon" href="https://www.vippng.com/png/full/369-3694531_anti-virus-circle-cyber-security-png.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/2072/PNG/512/antivirus_internet_lock_locked_protect_security_shield_icon_127108.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+      .rectangle {
+      counter-reset: li; 
+      list-style: none; 
+      font: 14px "Trebuchet MS", "Lucida Sans";
+      padding: 0;
+      text-shadow: 0 1px 0 rgba(255,255,255,.5);
+      }
+      .rectangle a {
+position: relative;
+display: block;
+padding: .4em .4em .4em .8em;
+margin: .5em 0 .5em 2.5em;
+background: #D3D4DA;
+color: #444;
+text-decoration: none;
+transition: all .3s ease-out;
+}
+.rectangle a:hover {background: #DCDDE1;}       
+.rectangle a:before {
+content: counter(li);
+counter-increment: li;
+position: absolute;
+left: -2.5em;
+top: 50%;
+margin-top: -1em;
+background: #9097A2;
+height: 2em;
+width: 2em;
+line-height: 2em;
+text-align: center;
+font-weight: bold;
+}
+.rectangle a:after {
+position: absolute;
+content: "";
+border: .5em solid transparent;
+left: -1em;
+top: 50%;
+margin-top: -.5em;
+transition: all .3s ease-out;
+}
+.rectangle a:hover:after {
+left: -.5em;
+border-left-color: #9097A2;
+}
+    </style>
 
-</head>
+  </head>
  
-<body>
-    <div class="parentClass" id="header"></div>
-    <div class="parentClass" id="content"></div>
-    <div class="parentClass" id="footer"></div>
-
     <header>
         <div class="navbar navbar-dark bg-dark shadow-sm">
           <div class="container">
             <div class="logo">
-                <class="logo_a"><a class="navbar-brand align-items-center" href="{%url 'home'%}">
-                  <strong>Антивирус</strong><img src="https://www.vippng.com/png/full/369-3694531_anti-virus-circle-cyber-security-png.png" height="25px"></a>
+                <class="logo_a">
+                  <a class="navbar-brand align-items-center" href="{%url 'home'%}">
+                  <strong>Антивирус</strong><img src="https://cdn.icon-icons.com/icons2/2072/PNG/512/antivirus_internet_lock_locked_protect_security_shield_icon_127108.png" height="25px">
                 </div>
 
 
