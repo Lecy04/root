@@ -7,16 +7,23 @@
     <title>{% block title %}{% endblock %}</title>
     <link rel="shortcut icon" href="https://www.vippng.com/png/full/369-3694531_anti-virus-circle-cyber-security-png.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  </head>
+
+</head>
+ 
 <body>
+    <div class="parentClass" id="header"></div>
+    <div class="parentClass" id="content"></div>
+    <div class="parentClass" id="footer"></div>
+
     <header>
         <div class="navbar navbar-dark bg-dark shadow-sm">
           <div class="container">
             <div class="logo">
                 <class="logo_a"><a class="navbar-brand align-items-center" href="{%url 'home'%}">
                   <strong>Антивирус</strong><img src="https://www.vippng.com/png/full/369-3694531_anti-virus-circle-cyber-security-png.png" height="25px"></a>
-            </div>
-                
+                </div>
+
+
                 <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
                 <a class="navbar-brand d-flex align-items-center" href="{%url 'home'%}">Главная</a>
                 <a class="navbar-brand d-flex align-items-center" href="{%url 'comparison'%}">Сравнение антивирусов</a>
