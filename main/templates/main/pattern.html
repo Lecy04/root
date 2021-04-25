@@ -57,8 +57,33 @@
 .list4a li:hover:after {
     animation: 500ms ease-in-out 0s bounceIn;
     opacity: 1;
-}    
- 
+}  
+
+
+.marquee-infinite {
+    margin: 30px auto;
+    border: 1px solid #000;
+    max-width: 100%;
+    overflow: hidden;
+    background-color: #343a40;
+}
+
+.marquee-infinite div {
+    display: flex;
+    width: 200%;
+    animation: marquee-infinite 5s linear infinite;
+}
+
+.marquee-infinite span {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.marquee-infinite img {
+    width: 50px;
+    height: 50px;
+}
 @keyframes bounceIn {
     0% {
         opacity: 0;
@@ -80,6 +105,15 @@
     to {
         opacity: 1;
         transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes marquee-infinite {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
     }
 }
     </style>
